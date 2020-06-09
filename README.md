@@ -32,7 +32,7 @@ NOTE:It's the GET method;
 
 6--Test your API if it displays data;
 
-7--Document your API using SWAGGER(We have just one method to document,let's call that : loggedUser );
+7--Document your API using SWAGGER;
 
 8--Create the txt file with your slack name for example @ben.Put your HNG-Board ID in the file.
 
