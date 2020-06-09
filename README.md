@@ -8,7 +8,7 @@ Task given: Dockerized micro-service for showing a dashboard for logged in users
 
 
 1--Fork the project to your github account
-   1.1 create the logic in our case the class USER,the attributes are listed 
+    
    
 2--Clone the repository in your local environement
   2.1--Run this command git  remote add https://github.com/bensoftware/Team-International-Backend/edit/master/README.md
