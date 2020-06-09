@@ -13,6 +13,7 @@ Task given: Dockerized micro-service for showing a dashboard for logged in users
  2.1--Run this command git : remote add https://github.com/bensoftware/Team-International-Backend/edit/master/README.md
   
 3--Notice  the JSON file in the project root,this is the structure(Same structure than the attributes in the model) :
+
 user_id(string);
 user_first_name(string);
 user_last_name(string);
