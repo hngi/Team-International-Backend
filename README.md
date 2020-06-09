@@ -1,12 +1,15 @@
-# Team-International-Backend
+# Team-International-Backend 
+
+
 
 Task given: Dockerized micro-service for showing a dashboard for logged in users
 
-#-------------------------------Django will be used  as the main Framework.
+#Django will be used  as the main Framework
 
 #---------------First Step
 
 1--Fork the project to your github account
+
 2--Clone the repository in your local environement
 
 3--Create the JSON file,this is the structure :
@@ -30,7 +33,8 @@ NOTE:It's the GET method;
 
 6--Test your API if it displays the JSON output from the JSON file;
 
-7--Document your API using SWAGGER(We have just one methode to document );
+7--Document your API using SWAGGER(We have just one method to document,let's call that : loggedUser );
+
 8--Create the txt file with your slack name for example @ben.Put your HNG-Board ID in the file.
 
 
@@ -41,4 +45,5 @@ NOTE:It's the GET method;
 11--Create the pull request to the main repository (https://github.com/hngi/Team-International-Backend.git).
 
 
+#---------------Second  Step is the dockerisation of the API,let's finish the first step.
 
