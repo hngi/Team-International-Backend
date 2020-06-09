@@ -57,4 +57,4 @@ https://www.youtube.com/watch?v=KN8wuFi2RXM
 
 16--Run git push origin master to push to your fork.For example (git push origin master  https://github.com/bensoftware/Team-International-Backend.git);
 
-16--Create the pull request to the main repository (https://github.com/hngi/Team-International-Backend.git).
+17--Create the pull request to the main repository (https://github.com/hngi/Team-International-Backend.git).
