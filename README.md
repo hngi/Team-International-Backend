@@ -6,8 +6,6 @@ Task given: Dockerized micro-service for showing a dashboard for logged in users
 
 
 1--Fork the project to your github account
-    
-   
 2--Clone the repository in your local environement
 
  2.1--Run this command :git remote add uppstream https://github.com/bensoftware/Team-International-Backend/edit/master/README.md
@@ -47,6 +45,7 @@ NOTE:It's the GET method;
     4)python manage.py runserver 
 
 7--Document your API using SWAGGER;
+7.1: If swagger is giving you a static file error please refer to this thread https://github.com/unioslo/mreg/issues/395
 
 8--Create the txt file with your slack name for example @ben.Put your HNG-Board ID in the file.
 
