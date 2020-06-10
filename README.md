@@ -27,7 +27,7 @@ is_user_logged(boolean).
 3--Integrate Swagger in the project;
 
 5--Create your microservice API it has to read the JSON file and display
-the outpout through the endpoint(api/team-international/user/logged);
+the outpout through the endpoint(/api/team-international/user/logged);
 
 NOTE:It's the GET method;
 
