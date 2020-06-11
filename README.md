@@ -1,4 +1,4 @@
-# Team-International-Backend (Dead-line FRIDAY 10:00 GMT)
+# Team-International-Backend (Deadline FRIDAY 10:00 GMT)
 
 
 Task given: **Dockerized micro-service for showing a dashboard for logged in users**
