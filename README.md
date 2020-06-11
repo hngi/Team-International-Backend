@@ -68,6 +68,7 @@ And now Swagger will work, A ticket about this issue was open and answered by on
 
 https://github.com/unioslo/mreg/issues/395
 
+----------------------------------------------------------------------------------------------------------------------------------------
 
 ####  Additional Information !
 
