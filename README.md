@@ -25,6 +25,9 @@ Now the server is up and running on your local host on http://127.0.0.1:8000/
 
 If you would like to navigate to swagger please go to http://127.0.0.1:8000/docs 
 
+This is the endpoint that displays logged users in Json Format:
+
+http://127.0.0.1:8000/api/team-international/users/logged
 
 
 ###  Dockerize the microservice 
