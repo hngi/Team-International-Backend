@@ -12,6 +12,7 @@ $ pip install djangorestframework
 
 2) In your command prompt navigate to the original file directory where the manage.py script exists and run the following:
 $python manage.py runserver
+
 Now the server is up and running on your local host on http://127.0.0.1:8000/
 
 # For more testing purposes please refer to the following 
