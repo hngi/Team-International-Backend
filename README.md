@@ -1,56 +1,93 @@
-# Team-International-Backend 
+# Team-International-Backend (Deadline FRIDAY 10:00 GMT)
 
 
+Task given: **Dockerized micro-service for showing a dashboard for logged in users**
 
-Task given: Dockerized micro-service for showing a dashboard for logged in users
-
-#Django will be used  as the main Framework
+### Django, Swagger, Docker and Django RestAPI were  used.
 
 
 1--Fork the project to your github account
     
-   
 2--Clone the repository in your local environement
 
- 2.1--Run this command git : remote add https://github.com/bensoftware/Team-International-Backend/edit/master/README.md
-  
-3--Create the JSON file,this is the structure(Same structure than the attributes in the model) :
-user_id(string);
-user_first_name(string);
-user_last_name(string);
-user_email(string);
-user_image(string),you can use any public image link;
-is_user_logged(boolean) it will always be true in our case.
+3--Run this command `git remote add upstream https://github.com/Team-International-Backend/edit/master/README.md`
+ 
+ 
+ Before running this please keep in mind you will need **Swagger, Docker, Django, and REST API.**
+ 
+ 
+---------------------------------------**Run the following commands to install these plugins**------------------------------------------
+ ```
+ pip install django
+ 
+ pip install django-rest-swagger
+ 
+ pip install djangorestframework
+ ```
+ Docker : https://docs.docker.com/docker-for-windows/install/
+ 
+ -----------------------------------------------------**Running the server**-------------------------------------------------------------
+
+In your command prompt navigate to the original file directory where the manage.py script exists and run the following:
+
+`python manage.py runserver`
+
+Now the server is up and running on your local host on http://127.0.0.1:8000/
 
 
-4--Put the pre-prepared  JSON file in your project;
+For more testing purposes please refer to the following
 
-5--Integrete Swagger in the project;
+`python manage.py makemigrations` -> **creates migration files based on your models**
 
-6--Create your microservice API it has to read the JSON file and display
-the outpout through the endpoint(api/team-international/user/logged);
+`python manage.py migrate` -> **will create the tables in your db based on the migration files created**
 
-NOTE:It's the GET method;
+`python manage.py createsuperuser` -> **will create a superuser for your application in the database**
 
-7--Test your API if it displays data;
+-------------------------------------------------------**Accessing Swagger**-----------------------------------------------------------
 
-8--Document your API using SWAGGER(We have just one method to document,let's call that : loggedUser );
 
-9--Create the txt file with your slack name for example @ben.Put your HNG-Board ID in the file.
+If you would like to navigate to swagger please go to http://127.0.0.1:8000/docs
 
-10--Put instructions in the Dockerfile  located in the project's root,this  will allow you to create the image.This bellow link will hepl you.
-https://www.youtube.com/watch?v=KN8wuFi2RXM
+--------------------------------------------------**Configuring Swagger with Django 3.0**------------------------------------------------
+!PLEASE NOTE: Swagger is currently facing problems with Django 3.0 or above, This problem is within the base swagger installation files on your local machine so there isn't really much we can do to fix it BUT we can always provide instructions :) 
+When trying to navigate to http://127.0.0.1:8000/docs you will be greeted with a static file error to fix it simply do the following:
 
-11--Create your image using Dockerfile.
+-navigate to `C:\Users\YOURNAME\AppData\Local\programs\python\python38\lib\site-packages\rest-framework-swagger\index.html`
 
-12--Use Docker command and Dockerfile to Create the container .
+-Open the HTML file in any text editor and navigate to line 2
 
-13-Run the container.
+Change `{% load staticfiles %} to {% load static %}`
 
-14--Run git add . (To add and upade files in the stagging area);
+-Back in the terminal press `Ctrl+C` to stop the server and run the server again.
 
-15--Commit your repository:git commit -m "Microservice created"
+And now Swagger will work, A ticket about this issue was open and answered by one of our team members here https://github.com/unioslo/mreg/issues/395
 
-16--Run git push origin master to push to your fork.For example (git push origin master  https://github.com/bensoftware/Team-International-Backend.git);
 
-17--Create the pull request to the main repository (https://github.com/hngi/Team-International-Backend.git).
+-------------------------------------------------------**Accessing the API**---------------------------------------------------------------
+
+You can also visit the rest API by visiting http://127.0.0.1:8000/api 
+
+http://127.0.0.1:8000/api/team-international/users/logged (it returns the already logged in users)
+
+
+
+
+------------------------------------------------------------**Docker**------------------------------------------------------------------
+
+1--Download and Install docker on your local machine,
+
+2--Run the following commands on your terminal(Linux) or command prompt(Windows):
+
+3--Test if docker is well installed by using this command : `docker --version` (it should display the docker's version installed).
+        
+ NOTE:In the root project folder you will notice **two files**, **Dockerfile** and **Docker-compose.yml** files.
+        
+4--Run this command: `docker-compose up` (It will build the image and run it using instructions in Dockerfile and Docker-              compose.yml files)
+          
+ This action **might take time** because; all dependencies like Django RestApi,Swagger...has to be downloaded as well.
+        
+ A the end of this process,The microservice will be running in the docker container and listenning to the port:8000
+       (This port was configured in the  Docker-compose.yml file [line-5])
+
+
+ 
