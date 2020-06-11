@@ -13,7 +13,7 @@ Task given: **Dockerized micro-service for showing a dashboard for logged in use
 3--Run this command `git remote add upstream https://github.com/Team-International-Backend/edit/master/README.md`
  
  
- Before running this please keep in mind you will need **Swagger, Docker, Django, and REST API.*
+ Before running this please keep in mind you will need **Swagger, Docker, Django, and REST API.**
  
  
 ---------------------------------------**Run the following commands to install these plugins**------------------------------------------
