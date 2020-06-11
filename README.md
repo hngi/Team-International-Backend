@@ -15,6 +15,8 @@ Task given: Dockerized micro-service for showing a dashboard for logged in users
  
  
  Before running this please keep in mind you will need Swagger, Django, and REST API.
+ 
+ 
 ---------------------------------------Run the following commands to install these plugins------------------------------------------
  pip install django
  pip install django-rest-swagger
@@ -23,8 +25,10 @@ Task given: Dockerized micro-service for showing a dashboard for logged in users
  -----------------------------------------------------Running the server-------------------------------------------------------------
 In your command prompt navigate to the original file directory where the manage.py script exists and run the following:
 python manage.py runserver
+
 Now the server is up and running on your local host on http://127.0.0.1:8000/
-You can also visit the rest API by visiting http://127.0.0.1:8000/api
+
+
 For more testing purposes please refer to the following
 python manage.py makemigrations ->creates migration files based on your models
 python manage.py migrate -> will create the tables in your db based on the migration files created
@@ -32,17 +36,20 @@ python manage.py createsuperuser ->will create a superuser for your application 
 
 ------------------------------------------------------- Accessing Swagger-----------------------------------------------------------
 
+
 If you would like to navigate to swagger please go to http://127.0.0.1:8000/docs
+
 
 ------------------------------------------------------------------------------------------
 
 
 -------------------------------------------------------Accessing the API
 
+You can also visit the rest API by visiting http://127.0.0.1:8000/api 
+
 http://127.0.0.1:8000/api/team-international/users/logged (it returns the already logged in users)
 
 
--------------------------------------------------------
 
 
 -------------------------------------------------------Docker :
@@ -51,15 +58,15 @@ http://127.0.0.1:8000/api/team-international/users/logged (it returns the alread
 
 2--Run the following  commands on your terminal(Linux) or command prompt(Windows):
 
-        2.1 Test if docker is well installed by using this command :docker --version(it should display the docker's version installed).
+3--Test if docker is well installed by using this command :docker --version(it should display the docker's version installed).
         
-        NOTE:In the root project folder you will notice two files, Dockerfile and Docker-compose.yml files.
+ NOTE:In the root project folder you will notice two files, Dockerfile and Docker-compose.yml files.
         
-          Run this command: docker-compose up (It will build the image and run it using instructions in Dockerfile and Docker-compose.yml files)
+4--Run this command: docker-compose up (It will build the image and run it using instructions in Dockerfile and Docker-              compose.yml files)
           
-        This action might take time because; all dependencies like Django RestApi,Swagger...has to be downloaded as well.
+ This action might take time because; all dependencies like Django RestApi,Swagger...has to be downloaded as well.
         
-        A the end of this process,The microservice will be running in the docker container and listenning to the port:8000
+ A the end of this process,The microservice will be running in the docker container and listenning to the port:8000
        (This port was configured in the  Docker-compose.yml file [line-5])
 
 
