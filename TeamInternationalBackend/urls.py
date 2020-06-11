@@ -23,6 +23,6 @@ schema_view = get_swagger_view(title="Docs")
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/team-international/', include('dashboard.urls')),
-    path('docs/', schema_view),
-    path('users/logged', UserDataView.as_view()),
+    # path('docs/', schema_view),
+    # path('users/logged', UserDataView.as_view()),
 ]
