@@ -1,4 +1,4 @@
-# Team-International-Backend(Dead-line Friday 10:00 GMT)
+# Team-International-Backend (Dead-line Friday 10:00 GMT)
 
 UPDATE: In this repo you will find the microservice with a REST API Integrated with Swagger for documentation purposes.
 Below are the instructions on how to get this microservice up and running for testing or development purposes.
@@ -50,8 +50,6 @@ user_email(string);
 user_image(string),
 is_user_logged(boolean).
 
-# TO DO:
-- Dockerize the microservice
 
 
 
