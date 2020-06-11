@@ -1,8 +1,8 @@
 # Team-International-Backend(Dead-line Friday 10:00 GMT)
 
 
-####TASK given: A dockerized micro-service for chowing a dashboard for logged users.
-
+TASK given: A dockerized micro-service for chowing a dashboard for logged users.
+---------------------------------------------------------------------------------------------------------------------------------------
 
 In this repo you will find the microservice with a REST API Integrated with Swagger for documentation purposes.
 Below are the instructions on how to get this microservice up and running for testing or development purposes.
@@ -45,7 +45,7 @@ If you would like to navigate to swagger please go to http://127.0.0.1:8000/docs
    At the end of this process,The microservice will be running in the docker container and listenning to the port:8000
    (This port was configured in the  `Docker-compose.yml` file `[line-5]`)
    
-
+---------------------------------------------------------------------------------------------------------------------------------------
 
 
 PLEASE NOTE: Swagger is currently facing problems with Django 3.0 or above, This problem is within the base swagger installation files on your local machine so there isn't really much we can do to fix it BUT we can always provide instructions :)
