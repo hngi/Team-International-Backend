@@ -1,30 +1,6 @@
 # Team-International-Backend(Dead-line Friday 10:00 GMT)
 
 
-#### Language used: Python;
-
-#### Frameworks used : Django;
-
-#### Dependancies:Django RestApi and Swagger.
-
-#### Prerequisites:Python 3.0 or >3.x.x;Git,Django.
-
-
-###Clone the project
-1--Fork the project to your github account 
-   
-
-2--Clone the repository in your local environement
-
-   for example: 
-    $git clone https://github.com/bensoftware/Team-International-Backend/edit/master/README.md
-
-
-3-Run this command : 
-   $git remote add uppstream https://github.com/bensoftware/Team-International-Backend/edit/master/README.md
-
-----------------------------------------------------------------------------------------------------------------------
-
 In this repo you will find the microservice with a REST API Integrated with Swagger for documentation purposes.
 Below are the instructions on how to get this microservice up and running for testing or development purposes.
 
