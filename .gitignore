@@ -1,5 +1,0 @@
-.idea
-*.iml
-*.pyc
-dashboard/migrations
-db.sqlite3
