@@ -7,6 +7,7 @@ TASK given: A dockerized micro-service for chowing a dashboard for logged users.
 In this repo you will find the microservice with a REST API Integrated with Swagger for documentation purposes.
 Below are the instructions on how to get this microservice up and running for testing or development purposes.
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 1) Fork this repository and Clone it on your system.
 
