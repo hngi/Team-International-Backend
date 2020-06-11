@@ -37,10 +37,8 @@ And now Swagger will work, A ticket about this issue was open and answered by on
 4)Do your changes or whatever part was assigned to you by the teamleads and Create a PR request !  
 
 # Additional Information !
--When commiting changes please include your Slack ID in the commit message so we can reach you easily.
--When creating a PR make sure you are submitting the correct files !
--If you have access to the repo DO NOT merge your own PR ! Wait for us to compare and run our test and then we will merge. 
--The JSON file structure is the same as the models.py (obviously) and it's in this format 
+-When commiting changes please include your Slack ID in the commit message so we can reach you easily. 
+-The JSON file structure is the same as the models.py and it's in this format 
 user_id(string);
 user_first_name(string);
 user_last_name(string);
