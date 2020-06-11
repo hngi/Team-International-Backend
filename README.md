@@ -49,7 +49,7 @@ And now Swagger will work, A ticket about this issue was open and answered by on
 
 ------------------------------------------------------------**Docker**------------------------------------------------------------------
 
-- Download and Install docker on your local machine from https://docs.docker.com/docker-for-windows/install/
+1- Download and Install docker on your local machine from https://docs.docker.com/docker-for-windows/install/
 
 
 2--Run the following  commands on your terminal(Linux) or command prompt(Windows):
@@ -61,7 +61,7 @@ And now Swagger will work, A ticket about this issue was open and answered by on
 **NOTE:In the root project folder you will notice two files, Dockerfile and Docker-compose.yml files.**
  Run this command: 
  
- `docker-compose up` -> **It will build the image and run it using instructions in Dockerfile and Docker-compose.yml files**
+3-- `docker-compose up` -> **It will build the image and run it using instructions in Dockerfile and Docker-compose.yml files**
   
   This action might take time because; all dependencies like Django RestApi,Swagger...has to be downloaded as well.
   A the end of this process,The microservice will be running in the docker container and listenning to the port:8000
