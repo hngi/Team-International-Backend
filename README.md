@@ -1,4 +1,4 @@
-#Team International Backend (Deadline Friday 10:00 GMT)
+# Team International Backend (Deadline Friday 10:00 GMT)
 UPDATE: In this repo you will find the **dockerized microservice with a REST API Integrated with Swagger** for documentation purposes. Below are the instructions on how to get this microservice up and running for testing or development purposes.
 
 Fork this repo, Clone it on your system. Before running this please keep in mind you will need **Swagger, Docker, Django, and REST API.**
@@ -70,7 +70,7 @@ And now Swagger will work, A ticket about this issue was open and answered by on
 
 **Finally** Do your changes or whatever part was assigned to you by the teamleads and Create a PR request !
 
-Additional Information !
+## Additional Information !
 -When commiting changes please include your Slack ID in the commit message so we can reach you easily.
 
 -The JSON file structure is the same as the models.py and it's in this format
