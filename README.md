@@ -1,10 +1,35 @@
 # Team-International-Backend(Dead-line Friday 10:00 GMT)
 
-UPDATE: 
+
+#### Language used: Python;
+
+#### Frameworks used : Django;
+
+#### Dependancies:Django RestApi and Swagger.
+
+#### Prerequisites:Python 3.0 or >3.x.x;Git,Django.
+
+
+###Clone the project
+1--Fork the project to your github account 
+   
+
+2--Clone the repository in your local environement
+
+   for example: 
+    $git clone https://github.com/bensoftware/Team-International-Backend/edit/master/README.md
+
+
+3-Run this command : 
+   $git remote add uppstream https://github.com/bensoftware/Team-International-Backend/edit/master/README.md
+
+----------------------------------------------------------------------------------------------------------------------
 
 In this repo you will find the microservice with a REST API Integrated with Swagger for documentation purposes.
 Below are the instructions on how to get this microservice up and running for testing or development purposes.
 
+
+## Repository
 1) Fork this repository, Clone it on your system.
 Before running this please keep in mind you will need Swagger, Django, and REST API.
 Run the following commands to install these plugins
@@ -12,7 +37,8 @@ Run the following commands to install these plugins
 `$ pip install django-rest-swagger`
 `$ pip install djangorestframework`
 
-2) In your command prompt navigate to the original file directory where the manage.py script exists and run the following:
+## Run the server
+1) In your command prompt navigate to the original file directory where the manage.py script exists and run the following:
 `$python manage.py runserver`
 
 Now the server is up and running on your local host on http://127.0.0.1:8000/
@@ -33,7 +59,9 @@ If you would like to navigate to swagger please go to http://127.0.0.1:8000/docs
 PLEASE NOTE: Swagger is currently facing problems with Django 3.0 or above, This problem is within the base swagger installation files on your local machine so there isn't really much we can do to fix it BUT we can always provide instructions :)
 When trying to navigate to http://127.0.0.1:8000/docs you will be greeted with a static file error to fix it simply do the following: 
 
--navigate to C:\Users\YOURNAME\AppData\Local\programs\python\python38\lib\site-packages\rest-framework-swagger\index.html
+-Navigate to :
+
+C:\Users\YOURNAME\AppData\Local\programs\python\python38\lib\site-packages\rest-framework-swagger\index.html
 
 -Open the HTML file in any text editor and navigate to line 2 
 
@@ -54,7 +82,7 @@ https://github.com/unioslo/mreg/issues/395
 
 1--Download and Install docker on your local machine,
 
-2--Run the following  commands on your terminal(Linux) or command prompt(Windows):
+2--Run the following  commands on your terminal(Linux) or command prompt(Windows)
 
 3--Test if docker is well installed by using this command :`docker --version`(it should display the docker's version installed).
    
