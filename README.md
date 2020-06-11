@@ -3,7 +3,7 @@
 
 Task given: **Dockerized micro-service for showing a dashboard for logged in users**
 
-### Django,Swagger and Django RestAPI were  used.
+### Django, Swagger, Docker and Django RestAPI were  used.
 
 
 1--Fork the project to your github account
