@@ -48,7 +48,27 @@ https://github.com/unioslo/mreg/issues/395
 
 4)Do your changes or whatever part was assigned to you by the teamleads and Create a PR request !  
 
-### Additional Information !
+
+###  Dockerize the microservice 
+
+
+1--Download and Install docker on your local machine,
+
+2--Run the following  commands on your terminal(Linux) or command prompt(Windows):
+
+3--Test if docker is well installed by using this command :`docker --version`(it should display the docker's version installed).
+   
+   NOTE:In the root project folder you will notice two files, `Dockerfile` and `Docker-compose.yml` files.
+   
+4--Run this command: `docker-compose up` (It will build the image and run it using instructions in Dockerfile and 
+   Docker-compose.yml)  
+   
+   This action might take time because; all dependencies like Django RestApi,Swagger...has to be downloaded as well.    
+   At the end of this process,The microservice will be running in the docker container and listenning to the port:8000
+   (This port was configured in the  `Docker-compose.yml` file `[line-5]`)
+   
+
+####  Additional Information !
 
 -When commiting changes please include your Slack ID in the commit message so we can reach you easily.
 
@@ -67,20 +87,3 @@ https://github.com/unioslo/mreg/issues/395
 `user_image(string),`
 `is_user_logged(boolean).`
 
-####  Dockerize the microservice 
-
-
-1--Download and Install docker on your local machine,
-
-2--Run the following  commands on your terminal(Linux) or command prompt(Windows):
-
-3--Test if docker is well installed by using this command :`docker --version`(it should display the docker's version installed).
-   
-   NOTE:In the root project folder you will notice two files, `Dockerfile` and `Docker-compose.yml` files.
-   
-4--Run this command: `docker-compose up` (It will build the image and run it using instructions in Dockerfile and 
-   Docker-compose.yml)  
-   
-   This action might take time because; all dependencies like Django RestApi,Swagger...has to be downloaded as well.    
-   At the end of this process,The microservice will be running in the docker container and listenning to the port:8000
-   (This port was configured in the  `Docker-compose.yml` file `[line-5]`)
