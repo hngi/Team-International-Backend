@@ -17,7 +17,7 @@ Run the following commands to install these plugins
 
 Now the server is up and running on your local host on http://127.0.0.1:8000/
 
-## For more testing purposes please refer to the following 
+#### For more testing purposes please refer to the following 
 
 `$python manage.py makemigrations` ->creates migration files based on your models
 
@@ -41,7 +41,9 @@ When trying to navigate to http://127.0.0.1:8000/docs you will be greeted with a
 
 -Back in the terminal press Ctrl+C to stop the server and run the server again. 
 
-And now Swagger will work, A ticket about this issue was open and answered by one of our team memebers here: https://github.com/unioslo/mreg/issues/395
+And now Swagger will work, A ticket about this issue was open and answered by one of our team memebers here:
+
+https://github.com/unioslo/mreg/issues/395
 
 
 4)Do your changes or whatever part was assigned to you by the teamleads and Create a PR request !  
@@ -54,30 +56,31 @@ And now Swagger will work, A ticket about this issue was open and answered by on
 
 -If you have access to the repo DO NOT merge your own PR ! Wait for us to compare and run our test and then we will merge. 
 
--The JSON file structure is the same as the models.py (obviously) and it's in this format 
-`user_id(string);
-user_first_name(string);
-user_last_name(string);
-user_gender(string);
-user_address(string);
-user_email(string);
-user_image(string),
-is_user_logged(boolean).`
+-The JSON file structure is the same as the models.py (obviously) and it's in this format :
+
+`user_id(string);`
+`user_first_name(string);`
+`user_last_name(string);`
+`user_gender(string);`
+`user_address(string`
+`user_email(string);`
+`user_image(string),`
+`is_user_logged(boolean).`
 
 ####  Dockerize the microservice 
 
 
 1--Download and Install docker on your local machine,
 
-
 2--Run the following  commands on your terminal(Linux) or command prompt(Windows):
-   2.1 Test if docker is well installed by using this command :`docker --version`(it should display the docker's version installed).
+
+3--Test if docker is well installed by using this command :`docker --version`(it should display the docker's version installed).
    
    NOTE:In the root project folder you will notice two files, `Dockerfile` and `Docker-compose.yml` files.
    
-   2.2 Run this command: `docker-compose up` (It will build the image and run it using instructions in Dockerfile and 
+4--Run this command: `docker-compose up` (It will build the image and run it using instructions in Dockerfile and 
    Docker-compose.yml)  
    
    This action might take time because; all dependencies like Django RestApi,Swagger...has to be downloaded as well.    
-   A the end of this process,The microservice will be running in the docker container and listenning to the port:8000
+   At the end of this process,The microservice will be running in the docker container and listenning to the port:8000
    (This port was configured in the  `Docker-compose.yml` file `[line-5]`)
