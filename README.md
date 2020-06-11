@@ -1,66 +1,56 @@
-# Team-International-Backend (Dead-line Friday 10:00 GMT)
-
-UPDATE: In this repo you will find the microservice with a REST API Integrated with Swagger for documentation purposes.
-Below are the instructions on how to get this microservice up and running for testing or development purposes.
-
-1) Fork this repo, Clone it on your system.
-Before running this please keep in mind you will need Swagger, Django, and REST API.
-Run the following commands to install these plugins
-$ pip install django
-$ pip install django-rest-swagger
-$ pip install djangorestframework
-
-2) In your command prompt navigate to the original file directory where the manage.py script exists and run the following:
-$python manage.py runserver
-Now the server is up and running on your local host on http://127.0.0.1:8000/
-
-# For more testing purposes please refer to the following 
-$python manage.py makemigrations ->creates migration files based on your models
-
-$python manage.py migrate-> will create the tables in your db based on the migration files created
-
-$python manage.py createsuperuser ->will create a superuser for your application in the database
-
-3) You will now be greeted with our REST API that displays the current logged in users.
-If you would like to navigate to swagger please go to http://127.0.0.1:8000/docs 
-
-PLEASE NOTE: Swagger is currently facing problems with Django 3.0 or above, This problem is within the base swagger installation files on your local machine so there isn't really much we can do to fix it BUT we can always provide instructions :)
-When trying to navigate to http://127.0.0.1:8000/docs you will be greeted with a static file error to fix it simply do the following: 
--navigate to C:\Users\YOURNAME\AppData\Local\programs\python\python38\lib\site-packages\rest-framework-swagger\index.html
--Open the HTML file in any text editor and navigate to line 2 
--Change {% load staticfiles %} to {% load static %}
--Back in the terminal press Ctrl+C to stop the server and run the server again. 
-
-And now Swagger will work, A ticket about this issue was open and answered by one of our team memebers here https://github.com/unioslo/mreg/issues/395
+# Team-International-Backend 
 
 
-4)Do your changes or whatever part was assigned to you by the teamleads and Create a PR request !  
 
-# Additional Information !
--When commiting changes please include your Slack ID in the commit message so we can reach you easily. 
--The JSON file structure is the same as the models.py and it's in this format 
+Task given: Dockerized micro-service for showing a dashboard for logged in users
+
+#Django will be used  as the main Framework
+
+
+1--Fork the project to your github account
+    
+   
+2--Clone the repository in your local environement
+
+ 2.1--Run this command git : remote add https://github.com/bensoftware/Team-International-Backend/edit/master/README.md
+  
+3--Create the JSON file,this is the structure(Same structure than the attributes in the model) :
 user_id(string);
 user_first_name(string);
 user_last_name(string);
-user_gender(string);
-user_address(string);
 user_email(string);
-user_image(string),
-is_user_logged(boolean).
+user_image(string),you can use any public image link;
+is_user_logged(boolean) it will always be true in our case.
 
 
+4--Put the pre-prepared  JSON file in your project;
 
+5--Integrete Swagger in the project;
 
+6--Create your microservice API it has to read the JSON file and display
+the outpout through the endpoint(api/team-international/user/logged);
 
+NOTE:It's the GET method;
 
+7--Test your API if it displays data;
 
+8--Document your API using SWAGGER(We have just one method to document,let's call that : loggedUser );
 
+9--Create the txt file with your slack name for example @ben.Put your HNG-Board ID in the file.
 
+10--Put instructions in the Dockerfile  located in the project's root,this  will allow you to create the image.This bellow link will hepl you.
+https://www.youtube.com/watch?v=KN8wuFi2RXM
 
+11--Create your image using Dockerfile.
 
+12--Use Docker command and Dockerfile to Create the container .
 
+13-Run the container.
 
+14--Run git add . (To add and upade files in the stagging area);
 
+15--Commit your repository:git commit -m "Microservice created"
 
+16--Run git push origin master to push to your fork.For example (git push origin master  https://github.com/bensoftware/Team-International-Backend.git);
 
-  
+17--Create the pull request to the main repository (https://github.com/hngi/Team-International-Backend.git).
