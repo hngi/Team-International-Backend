@@ -21,8 +21,9 @@ from rest_framework_swagger.views import get_swagger_view
 
 schema_view = get_swagger_view(title="Docs")
 urlpatterns = [
+    path('', UserDataView.as_view()),
     path('admin/', admin.site.urls),
     path('api/team-international/', include('dashboard.urls')),
     path('docs/', schema_view),
-    path('users/logged', UserDataView.as_view()),
+    
 ]
