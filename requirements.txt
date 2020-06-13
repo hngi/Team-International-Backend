@@ -1,0 +1,10 @@
+django ~= 3.0
+djangorestframework
+django-rest-swagger
+psycopg2>=2.7,<3.0
+
+## Important commands for docker
+$docker build -t <name-of-image> <directory>   #Creates/build a docker image
+$docker images                                 #Show list of images
+$docker run -d -p 8888:8000 <name-of-image>    #Runs the created image
+$docker ps                                     #Shows all containers that are currently running
