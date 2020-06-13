@@ -1,3 +1,4 @@
 django ~= 3.0
 djangorestframework
+djangorestframework-jwt
 django-rest-swagger

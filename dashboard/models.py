@@ -1,21 +1,14 @@
+import uuid
 from django.db import models
 
-# Create your models here.
-GENDER = (
-    ('female', 'female'),
-    ('male', 'male')
-)
 
-
-class UserData(models.Model):
-    user_first_name = models.CharField(max_length=60)
-    user_last_name = models.CharField(max_length=60)
-    user_gender = models.CharField(max_length=6, choices=GENDER)
-    user_email = models.CharField(max_length=60)
-    user_address = models.CharField(max_length=200)
-    is_user_logged = models.BooleanField()
-    user_image = models.CharField(max_length=1000)
-
-    def __str__(self):
-        """A string representation of the model."""
-        return self.user_first_name+' '+self.user_last_name
+class UserProfile(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    first_name = models.CharField(max_length=50, unique=False)
+    last_name = models.CharField(max_length=50, unique=False)
+    email = models.CharField(unique=True, max_length=50, null=False)
+    phone_number = models.CharField(unique=True, null=False, blank=False, max_length=100)
+    age = models.PositiveIntegerField(null=False, blank=False)
+    user_logged_in = models.BooleanField(null=True,default=False)
+    password = models.CharField(null=False, max_length=255)
+    token_exp = models.IntegerField(null=True)

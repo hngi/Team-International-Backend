@@ -1,6 +1,6 @@
 from django.contrib import admin
 
 # Register your models here.
-from dashboard.models import UserData
+from .models import UserProfile
 
-admin.site.register(UserData)
+admin.site.register(UserProfile)
