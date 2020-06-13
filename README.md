@@ -46,11 +46,11 @@ For more testing purposes please refer to the following
 -------------------------------------------------------**Accessing Swagger**-----------------------------------------------------------
 
 
-If you would like to navigate to swagger please go to http://127.0.0.1:8000/docs
+If you would like to navigate to swagger please go to http://127.0.0.1:8000/
 
 --------------------------------------------------**Configuring Swagger with Django 3.0**------------------------------------------------
 !PLEASE NOTE: Swagger is currently facing problems with Django 3.0 or above, This problem is within the base swagger installation files on your local machine so there isn't really much we can do to fix it BUT we can always provide instructions :) 
-When trying to navigate to http://127.0.0.1:8000/docs you will be greeted with a static file error to fix it simply do the following:
+When trying to navigate to http://127.0.0.1:8000 you will be greeted with a static file error to fix it simply do the following:
 
 -navigate to `C:\Users\YOURNAME\AppData\Local\programs\python\python38\lib\site-packages\rest-framework-swagger\index.html`
 
