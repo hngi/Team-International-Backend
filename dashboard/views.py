@@ -39,7 +39,6 @@ def user_details(request):
 def user_creation_details(request):
     if request.method == 'POST':
         request.data.user_logged_in = False
-        print(request.data)
         serializer = UserSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
@@ -64,7 +63,7 @@ def get_auth_token(request):
                 data = {
                     'message': 'Retreived token successfully',
                     'data': {
-                        'client_id': userData['id'],
+                        'account_id': userData['id'],
                         'auth_token': token.decode("utf-8")
                     },
                     "status": status.HTTP_200_OK

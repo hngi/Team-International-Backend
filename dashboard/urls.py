@@ -26,5 +26,5 @@ urlpatterns = [
     path('v1/users/dashboard', user_details),
     path('v1/users/login', get_auth_token),
     path('v1/users/logout', logout),
-    path('docs/', schema_view),
+    path('', schema_view),
 ]
