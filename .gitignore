@@ -3,3 +3,6 @@
 *.pyc
 dashboard/migrations
 db.sqlite3
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
