@@ -21,6 +21,7 @@ from rest_framework_swagger.views import get_swagger_view
 from .views import user_details, user_creation_details, get_auth_token, logout
 
 schema_view = get_swagger_view(title="Dashboard-Try all these APIs in postman using the refrences given below")
+
 urlpatterns = [
     path('v1/users/create', user_creation_details),
     path('v1/users/dashboard', user_details),
